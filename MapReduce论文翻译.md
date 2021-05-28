@@ -70,7 +70,7 @@ $$
 
 **分布式的Grep：** *Map*函数获取匹配提供的模式的行，*Reduce*函数只是简单地将这些中间数据拷贝到输出。
 
-**计算URL访问频率：**Map函数处理日志中web页面请求的记录，然后输出*<URL,1>*。Reduce函数把相同URL的value值都累加起来，产生*<URL, total count>*结果。
+**计算URL访问频率：** *Map*函数处理日志中web页面请求的记录，然后输出*<URL,1>*。Reduce函数把相同URL的value值都累加起来，产生*<URL, total count>*结果。
 
 **倒转网络链接图：** *Map*函数在源页面（source）中搜索所有的链接目标（target）并输出为*<target, source>*。*Reduce*函数把给定链接目标（target）的链接组合成一个列表，输出*<target, list(source)>*。
 
